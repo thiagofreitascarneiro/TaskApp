@@ -18,5 +18,11 @@
     border: none;
     font-size: 16px;
     color: chartreuse;
-    cursor: pointer;   
+    cursor: pointer; 
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;  
 }
+
+.remove-task-button:hover {
+    box-shadow: 0 0 10px 0 #34dbdb inset, 0 0 10px 4px #39db34;
+  }
