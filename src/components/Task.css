@@ -16,7 +16,7 @@
 .remove-task-button {
     background-color: rgb(17, 17, 17);
     border: none;
-    font-size: 16px;
+    font-size: 24px;
     color: chartreuse;
     cursor: pointer; 
     -webkit-transition: all 150ms ease-in-out;
@@ -24,5 +24,19 @@
 }
 
 .remove-task-button:hover {
-    box-shadow: 0 0 10px 0 #34dbdb inset, 0 0 10px 4px #39db34;
+    box-shadow: 0 0 10px 0 #34dbdb  inset, 0 0 10px 4px #39db34;
+  }
+
+  .see-task-details-button {
+    background-color: rgb(17, 17, 17);
+    border: none;
+    font-size: 24px;
+    color: chartreuse;
+    cursor: pointer; 
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;  
+  }
+
+  .see-task-button:hover {
+    box-shadow: 0 0 10px 0 #34dbdb  inset, 0 0 10px 4px #39db34;
   }
