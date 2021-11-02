@@ -32,9 +32,11 @@
     border: none;
     font-size: 24px;
     color: chartreuse;
+    margin: 0 5px;
     cursor: pointer; 
     -webkit-transition: all 150ms ease-in-out;
     transition: all 150ms ease-in-out;  
+    
   }
 
   .see-task-button:hover {
