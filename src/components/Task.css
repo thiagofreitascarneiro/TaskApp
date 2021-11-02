@@ -39,6 +39,12 @@
     
   }
 
-  .see-task-button:hover {
+  .see-task-details-button:hover {
     box-shadow: 0 0 10px 0 #34dbdb  inset, 0 0 10px 4px #39db34;
+  }
+
+  .buttons-container {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
   }
