@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 
 import {v4 as uuidv4 } from 'uuid';
-import { BrowserRouter as Router, Route} from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Tasks from './components/Tasks'
 import AddTask from './components/AddTask';
-import "./App.css"
+import "./App.css";
 import Header from './components/Header';
+import TaskDetails from './components/TaskDetails'
 
 const App = () => {
     const [tasks, setTasks] = useState([
@@ -57,26 +58,26 @@ const App = () => {
       <Router>
         <div className="container">
             <Header />
-            <Route path="/" exact render={() => (
-                <>
-                  <AddTask handleTaskAddition={handleTaskAddition}/> 
-                  <Tasks 
-                      tasks={tasks} 
-                      handleTaskClick={handleTaskClick} 
-                      handleTaskDeletion={handleTaskDeletion}  
-                  />
-                </>
-            )}
+            <Route path="/" 
+                  exact 
+                  render={() => (
+                    <>
+                      <AddTask handleTaskAddition={handleTaskAddition} /> 
+                      <Tasks 
+                          tasks={tasks} 
+                          handleTaskClick={handleTaskClick} 
+                          handleTaskDeletion={handleTaskDeletion}  
+                      />
+                    </>
+                  )}
             />
-            {/*<AddTask handleTaskAddition={handleTaskAddition}/> 
-            <Tasks 
-              tasks={tasks} 
-              handleTaskClick={handleTaskClick} 
-              handleTaskDeletion={handleTaskDeletion}              
-    / > */} 
+          <Route path="/:taskTitle" exact render={TaskDetails} />
         </div>
       </Router>
-  );
+    );
 };
 
+
 export default App;
+
+
