@@ -3,7 +3,7 @@
 ![](react.png)
 ## project's goal
 
-> This project was created to control daily task.
+> This project was created to control daily task. It allow  you create task, delete task, control completed task and view task details.
 ### 🧪 Technologies
 
 - React 
