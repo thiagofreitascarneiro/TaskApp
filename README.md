@@ -1,5 +1,6 @@
 # Control Task Daily
 
+![](react.png)
 ## project's goal
 
 > This project was created to control daily task.
